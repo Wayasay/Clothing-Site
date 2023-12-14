@@ -4,17 +4,25 @@ body {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     height: auto;
 }
-  header{
-    z-index: 1000;
-    font-size: 9px;
+.head{
+    background-color: rgba(224, 237, 245, 1);
+}
+.header{
     display: flex;
-    margin-top: 2px;
+    width: 1100px;
+    height: 44px;
+    margin: 5px auto;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 2px 14%;
-    background-color:rgba(224, 237, 245, 1);
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+     
+}
+.sub-header1,
+.sub-header2 {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+  color: #0065fe;
 }
 
 .scimg{
@@ -22,40 +30,50 @@ body {
     align-items: center;
     
 }
-.navbar{
+nav {
     display: flex;
-    list-style: none;
-}
-.navbar .url{
-    color: blue;
-}
-.navbar a{
-    color: black;
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin: 0px 30px;
-    text-decoration: none;
-}
-.sideheader{
-    width:0px;
-    display: flex;
+    flex: 3 100px;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    margin-right: 20px;
-}
-
-.Log{
-    font-size: 12px;
+    gap: 50px;
+  }
+  
+  nav li a {
+    font-size: 18px;
+  }
+  
+  nav li select {
+    font-size: 16px;
+  }
+  
+  nav li {
+    list-style-type: none;
+  }
+  
+  nav li a,
+  select {
+    text-decoration: none;
     color: black;
-    margin-left: 39px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: transparent;
-    font-weight: bold;
-    border: 0.8px solid black;
-}
+    text-align: center;
+  }
+  select {
+    background-color: rgba(210, 192, 221, 0.001);
+    border: 0px;
+    outline: 0px;
+  }
+  .first-link a {
+    color: #0065fe;
+  }
+  
+  .sub-header2 button {
+    background-color: #0065fe;
+    color: white;
+    border-radius: 18px;
+    border: 1px solid #0065fe;
+    padding: 10px 30px;
+    cursor: pointer;
+  }
+
 .first{
     display:flex;
     align-items: center;
@@ -75,7 +93,7 @@ body {
     top:79%;
 }
 .tee img{
-    width: 1570px;
+    
     height: 123px;
     filter: brightness(100%);
 }
@@ -113,6 +131,7 @@ margin-top:-4%;
     margin-top: 5%;
     display: block;
     align-items: center;
+   
 }
 .coll{
    text-align: center;
@@ -123,7 +142,7 @@ margin-top:-4%;
     margin-left:26%;
     position: absolute;
     display: flex;
- 
+
 }
 .fem{
     display: block;
@@ -228,7 +247,7 @@ margin-top:-4%;
 }
 .sectchi{
     background-color: white;
-    color: black;
+    color: rgb(34, 15, 15);
     height:23% ;
     padding-left: 20px;
 }
@@ -488,3 +507,96 @@ ul{
     background-color: #ebe2e2 ;
 }
 
+
+    @media (max-width: 600px) {
+        nav{
+           flex-direction: ;
+           
+            
+            
+        }
+        .sub-header2{
+            flex-direction: column;
+        }
+        .navbar{
+            flex-direction: column;
+        }
+        .navbar2{
+            text-align: center;
+            flex-direction:column ;
+        }
+       .females{
+        flex-direction: column;
+       }
+       .bestie{
+        margin-top: 80%;
+       }
+       .best{
+        margin-top: 190%;
+        margin-right: -50px;
+       }
+       .rect{
+        width: 100px;
+        position: relative;
+        right: 10%;
+        top: 10px;
+       }
+       .seller{
+        flex-direction: column;
+    
+        height: 1650px;
+ 
+       }
+      
+       .sect, .sectt{
+
+        padding-left: 80px;
+       }
+       
+       .sectchi{
+        width: 160px;
+        height: 110px;
+       }
+       .sect img{
+        width: 180px;
+       }
+       .sectt img{
+        width: 180px;
+       }
+       .sectt{
+        margin-bottom: 40px;
+       }
+       .strs img{
+        width: 80px;
+        padding-left: 4px;
+       }
+       
+       .sectchi img{
+        width: 80px;
+       }
+       
+       .sectcho{
+        width: 170px;
+        height: 110px;
+
+       }
+       .deal{
+        
+       }
+       .reviews{
+        padding-left: 50px;
+       }
+       .products-grid{
+        grid-template-columns: 1fr ;
+        padding-left: 50px;
+    
+       }
+       .customers, .customer{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+       }
+       .foot{
+       width: 440px;
+       
+       }
+      }
